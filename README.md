@@ -1,36 +1,147 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-First, run the development server:
+A modern, responsive personal portfolio website built with Next.js, TypeScript, and CSS Modules.
+
+## 📖 Description
+
+This project is a personal portfolio website built to showcase my skills and projects to potential employers and collaborators. It features a clean, minimalist design with strong attention to user experience and performance. The site is fully responsive and optimized for all devices.
+
+A key highlight of this project is the reusable UI component library I developed from scratch. This library not only ensures consistency and scalability within the portfolio itself, but is also flexible enough to be reused across different applications. By making the UI foundation modular and extensible, the website demonstrates practices that scale well to larger projects and team-based development.
+
+---
+
+---
+
+## ✨ Architecture
+
+```mermaid
+flowchart LR
+    %% Groups
+    subgraph Development[Development & Build]
+        Storybook
+        NPM
+    end
+
+    subgraph Backend[Backend]
+        HeadlessCMS[Headless CMS]
+        GraphQLServer[GraphQL Server]
+    end
+
+    subgraph Frontend[Frontend]
+        NextJS[Next.js]
+    end
+
+    subgraph Deployment[Deployment / Hosting]
+        Vercel
+        Netlify
+    end
+
+    %% Flows
+    Storybook --> NPM --> NextJS
+    NextJS --> Vercel
+    Storybook --> Netlify
+
+    HeadlessCMS --> GraphQLServer --> NextJS
+
+```
+
+---
+
+## 📸 Screenshots
+
+_(Add screenshots of your project here. For example:)_
+| Home Page | About Page |
+|---|---|
+| ![Screenshot of the home page](https://via.placeholder.com/400x300.png?text=HomePage) | ![Screenshot of the about page](https://via.placeholder.com/400x300.png?text=About+Page) |
+
+---
+
+## 🚀 Features
+
+- **Custom Component Library:** The UI is built with a custom React
+- **Responsive Design:** The layout adapts to different screen sizes.
+  component library, `@krnjs/react-ui`.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [CSS Modules](https://github.com/css-modules/css-modules)
+- **UI Components:** [@krnjs/react-ui](https://www.npmjs.com/package/@krnjs/react-ui) (custom library)
+- **Linting:** [ESLint](https.eslint.org/)
+- **Deployment:** [Vercel](https://vercel.com/)
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/en/) (v18.x or later)
+- [npm](https://www.npmjs.com/)
+
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone git@github.com:keigokudo/portfolio.git
+    ```
+2.  Navigate to the project directory:
+    ```bash
+    cd portfolio
+    ```
+3.  Install the dependencies:
+    ```bash
+    npm install
+    ```
+
+### Running the Development Server
+
+To start the development server, run the following command:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+```
+/
+├── public/              # Static assets
+├── src/
+│   ├── app/             # Next.js App Router
+│   │   ├── components/  # Shared components
+│   │   ├── layout.tsx   # Root layout
+│   │   └── page.tsx     # Home page
+│   └── ...
+├── next.config.ts       # Next.js configuration
+├── package.json         # Project dependencies and scripts
+└── ...
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or create a pull request.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📞 Contact
+
+Project Link: [https://github.com/keigokudo/portfolio](https://github.com/keigokudo/portfolio)
