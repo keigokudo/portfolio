@@ -534,6 +534,7 @@ body {
 
 .case-study__section code {
   font-size: inherit;
+  overflow-wrap: anywhere;
 }
 
 .case-study__links {
@@ -748,6 +749,10 @@ body {
   }
 
   .case-study__workflow--system {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .case-study__workflow--lab {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
