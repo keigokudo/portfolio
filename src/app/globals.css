@@ -595,16 +595,66 @@ body {
   overflow-wrap: anywhere;
 }
 
-.case-study__system-context {
+.case-study__system-context,
+.case-study__pipeline {
   margin: 0;
 }
 
-.case-study__system-context figcaption {
+.case-study__system-context figcaption,
+.case-study__pipeline figcaption {
   color: var(--portfolio-color-text-muted);
   font-size: var(--portfolio-font-size-meta);
   font-weight: var(--portfolio-font-weight-medium);
   letter-spacing: var(--portfolio-letter-spacing-meta);
   line-height: var(--portfolio-line-height-meta);
+}
+
+.case-study__pipeline-stages {
+  display: grid;
+  margin: var(--portfolio-space-lg) 0;
+  padding: 0;
+  border-top: var(--portfolio-border-width) solid
+    var(--portfolio-color-border);
+  list-style: none;
+}
+
+.case-study__pipeline-stages > li {
+  min-width: 0;
+  padding-block: var(--portfolio-space-md);
+  border-bottom: var(--portfolio-border-width) solid
+    var(--portfolio-color-border);
+}
+
+.case-study__pipeline-step {
+  color: var(--portfolio-color-text-muted);
+  font-size: var(--portfolio-font-size-meta);
+  font-variant-numeric: tabular-nums;
+}
+
+.case-study__pipeline-stages h3 {
+  margin-top: var(--portfolio-space-xs);
+}
+
+.case-study__pipeline-stages p {
+  margin-bottom: 0;
+  color: var(--portfolio-color-text-muted);
+}
+
+.case-study__pipeline-branch > ol {
+  display: grid;
+  gap: var(--portfolio-space-sm);
+  margin: var(--portfolio-space-md) 0 0;
+  padding-left: var(--portfolio-space-md);
+}
+
+.case-study__pipeline-branch > ol strong,
+.case-study__pipeline-branch > ol span {
+  display: block;
+}
+
+.case-study__pipeline-branch > ol span {
+  margin-top: var(--portfolio-space-xs);
+  color: var(--portfolio-color-text-muted);
 }
 
 .case-study__context-support {
@@ -754,6 +804,25 @@ body {
 
   .case-study__workflow--lab {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .case-study__pipeline-stages {
+    grid-template-columns:
+      minmax(0, 0.8fr) minmax(0, 1.4fr) minmax(0, 0.8fr)
+      minmax(0, 0.8fr);
+  }
+
+  .case-study__pipeline-stages > li {
+    padding-inline: var(--portfolio-space-md);
+  }
+
+  .case-study__pipeline-stages > li:first-child {
+    padding-left: 0;
+  }
+
+  .case-study__pipeline-stages > li + li {
+    border-left: var(--portfolio-border-width) solid
+      var(--portfolio-color-border);
   }
 
   .case-study__boundary {
