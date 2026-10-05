@@ -458,6 +458,7 @@ body {
 .case-study__workflow-stage {
   display: block;
   margin-top: var(--portfolio-space-xs);
+  overflow-wrap: anywhere;
   color: var(--portfolio-color-text);
   font-size: var(--portfolio-font-size-body);
   font-weight: var(--portfolio-font-weight-medium);
@@ -562,6 +563,35 @@ body {
   text-decoration: underline;
   text-decoration-thickness: var(--portfolio-border-width);
   text-underline-offset: var(--portfolio-space-xs);
+}
+
+.case-study__boundary {
+  display: grid;
+  margin-top: var(--portfolio-space-lg);
+  border-top: var(--portfolio-border-width) solid
+    var(--portfolio-color-border);
+}
+
+.case-study__boundary > div {
+  padding-block: var(--portfolio-space-md);
+  border-bottom: var(--portfolio-border-width) solid
+    var(--portfolio-color-border);
+}
+
+.case-study__boundary ul,
+.case-study__package-paths {
+  display: grid;
+  gap: var(--portfolio-space-xs);
+  margin: 0;
+  padding-left: var(--portfolio-space-md);
+}
+
+.case-study__package-paths {
+  margin-block: var(--portfolio-space-md);
+}
+
+.case-study__package-paths code {
+  overflow-wrap: anywhere;
 }
 
 @media (min-width: 48rem) {
@@ -673,6 +703,27 @@ body {
     right: 0;
     bottom: auto;
     transform: translateY(-50%);
+  }
+
+  .case-study__workflow--package {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
+  .case-study__boundary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-study__boundary > div {
+    padding-inline: var(--portfolio-space-md);
+  }
+
+  .case-study__boundary > div:first-child {
+    padding-left: 0;
+  }
+
+  .case-study__boundary > div + div {
+    border-left: var(--portfolio-border-width) solid
+      var(--portfolio-color-border);
   }
 }
 
