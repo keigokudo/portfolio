@@ -92,7 +92,7 @@ export default function WorkPage() {
                 <span className="work-lab__focus">
                   <span className="work-lab__label">FOCUS</span>
                   <span className="work-lab__focus-value">
-                    Python · yt-dlp · FFmpeg · Whisper
+                    Python · yt-dlp · faster-whisper · Pipeline design
                   </span>
                 </span>
                 <span className="work-lab__arrow" aria-hidden="true">
