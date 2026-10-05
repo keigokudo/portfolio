@@ -65,6 +65,10 @@ body {
   line-height: var(--portfolio-line-height-body);
 }
 
+.selected-work {
+  padding-top: var(--portfolio-layout-section-gap-compact);
+}
+
 @media (min-width: 48rem) {
   .home-hero {
     padding-block: var(--portfolio-space-lg);
