@@ -211,6 +211,93 @@ body {
   line-height: var(--portfolio-line-height-meta);
 }
 
+.work-case-studies,
+.work-lab {
+  padding-top: var(--portfolio-layout-section-gap-compact);
+}
+
+.work-lab__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.work-lab__project {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "index arrow"
+    "identity identity"
+    "focus focus";
+  align-items: start;
+  gap: var(--portfolio-space-sm);
+  padding-block: var(--portfolio-space-md);
+  border-bottom: var(--portfolio-border-width) solid
+    var(--portfolio-color-border);
+  color: var(--portfolio-color-text);
+  text-decoration: none;
+}
+
+.work-lab__index {
+  grid-area: index;
+}
+
+.work-lab__identity {
+  grid-area: identity;
+}
+
+.work-lab__focus {
+  grid-area: focus;
+}
+
+.work-lab__arrow {
+  grid-area: arrow;
+  font-size: var(--portfolio-font-size-body);
+  line-height: var(--portfolio-line-height-body);
+}
+
+.work-lab__identity,
+.work-lab__focus {
+  display: grid;
+  min-width: 0;
+  gap: var(--portfolio-space-xs);
+}
+
+.work-lab__index,
+.work-lab__label {
+  color: var(--portfolio-color-text-muted);
+  font-size: var(--portfolio-font-size-meta);
+  font-weight: var(--portfolio-font-weight-medium);
+  letter-spacing: var(--portfolio-letter-spacing-meta);
+  line-height: var(--portfolio-line-height-meta);
+}
+
+.work-lab__title {
+  overflow-wrap: anywhere;
+  font-size: var(--portfolio-font-size-body);
+  font-weight: var(--portfolio-font-weight-medium);
+  line-height: var(--portfolio-line-height-body);
+}
+
+.work-lab__focus-value {
+  overflow-wrap: anywhere;
+  color: var(--portfolio-color-text-muted);
+  font-size: var(--portfolio-font-size-body);
+  line-height: var(--portfolio-line-height-body);
+}
+
+.work-lab__project:hover .work-lab__title {
+  text-decoration: underline;
+  text-decoration-thickness: var(--portfolio-border-width);
+  text-underline-offset: var(--portfolio-space-xs);
+}
+
+.work-lab__project:focus-visible {
+  border-radius: var(--portfolio-radius-subtle);
+  outline: var(--portfolio-focus-width) solid var(--portfolio-color-focus);
+  outline-offset: var(--portfolio-focus-offset);
+}
+
 @media (min-width: 48rem) {
   .home-hero {
     padding-block: var(--portfolio-space-lg);
@@ -265,6 +352,14 @@ body {
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: baseline;
     gap: var(--portfolio-space-lg);
+  }
+
+  .work-lab__project {
+    grid-template-columns:
+      minmax(var(--portfolio-space-lg), 0.35fr) minmax(0, 1.15fr)
+      minmax(0, 1fr) auto;
+    grid-template-areas: "index identity focus arrow";
+    column-gap: var(--portfolio-space-lg);
   }
 }
 
