@@ -69,6 +69,57 @@ body {
   padding-top: var(--portfolio-layout-section-gap-compact);
 }
 
+.delivery-process {
+  padding-top: var(--portfolio-layout-section-gap-compact);
+}
+
+.delivery-process__heading {
+  margin: 0;
+  padding-block: var(--portfolio-space-md);
+  border-top: var(--portfolio-border-width) solid
+    var(--portfolio-color-border);
+  font-family: var(--portfolio-font-body);
+  font-size: var(--portfolio-font-size-meta);
+  font-weight: var(--portfolio-font-weight-medium);
+  letter-spacing: var(--portfolio-letter-spacing-meta);
+  line-height: var(--portfolio-line-height-meta);
+}
+
+.delivery-process__sequence {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  border-top: var(--portfolio-border-width) solid
+    var(--portfolio-color-border);
+  list-style-position: inside;
+}
+
+.delivery-process__sequence li {
+  position: relative;
+  padding-block: var(--portfolio-space-md);
+  border-bottom: var(--portfolio-border-width) solid
+    var(--portfolio-color-border);
+  color: var(--portfolio-color-text-muted);
+  font-size: var(--portfolio-font-size-meta);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: var(--portfolio-letter-spacing-meta);
+  line-height: var(--portfolio-line-height-meta);
+}
+
+.delivery-process__arrow {
+  position: absolute;
+  right: 0;
+  font-size: var(--portfolio-font-size-body);
+}
+
+.delivery-process__stage {
+  color: var(--portfolio-color-text);
+  font-size: var(--portfolio-font-size-body);
+  font-weight: var(--portfolio-font-weight-medium);
+  letter-spacing: normal;
+  line-height: var(--portfolio-line-height-body);
+}
+
 @media (min-width: 48rem) {
   .home-hero {
     padding-block: var(--portfolio-space-lg);
@@ -83,6 +134,33 @@ body {
   .home-hero__technologies {
     justify-self: end;
     text-align: right;
+  }
+
+  .delivery-process__sequence {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .delivery-process__sequence li {
+    min-width: 0;
+    padding: var(--portfolio-space-lg) var(--portfolio-space-md);
+  }
+
+  .delivery-process__sequence li:first-child {
+    padding-left: 0;
+  }
+
+  .delivery-process__sequence li:last-child {
+    padding-right: 0;
+  }
+
+  .delivery-process__arrow {
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+  }
+
+  .delivery-process__stage {
+    display: block;
+    margin-top: var(--portfolio-space-xs);
   }
 }
 

@@ -55,6 +55,50 @@ export default function HomePage() {
           </div>
         </Container>
       </section>
+
+      <section className="delivery-process">
+        <Container>
+          <h2 className="delivery-process__heading">
+            FROM PROBLEM TO PRODUCTION
+          </h2>
+
+          <ol className="delivery-process__sequence">
+            <li>
+              <span className="delivery-process__stage">Understand</span>
+              <span className="delivery-process__arrow" aria-hidden="true">
+                ↓
+              </span>
+            </li>
+            <li>
+              <span className="delivery-process__stage">Simplify</span>
+              <span className="delivery-process__arrow" aria-hidden="true">
+                ↓
+              </span>
+            </li>
+            <li>
+              <span className="delivery-process__stage">Design</span>
+              <span className="delivery-process__arrow" aria-hidden="true">
+                ↓
+              </span>
+            </li>
+            <li>
+              <span className="delivery-process__stage">Build</span>
+              <span className="delivery-process__arrow" aria-hidden="true">
+                ↓
+              </span>
+            </li>
+            <li>
+              <span className="delivery-process__stage">Validate</span>
+              <span className="delivery-process__arrow" aria-hidden="true">
+                ↓
+              </span>
+            </li>
+            <li>
+              <span className="delivery-process__stage">Ship</span>
+            </li>
+          </ol>
+        </Container>
+      </section>
     </>
   );
 }
