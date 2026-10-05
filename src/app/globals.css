@@ -169,6 +169,48 @@ body {
   line-height: var(--portfolio-line-height-body);
 }
 
+.availability {
+  padding-top: var(--portfolio-layout-section-gap-compact);
+}
+
+.availability__heading {
+  margin: 0;
+  padding-block: var(--portfolio-space-md);
+  border-top: var(--portfolio-border-width) solid
+    var(--portfolio-color-border);
+  font-family: var(--portfolio-font-body);
+  font-size: var(--portfolio-font-size-meta);
+  font-weight: var(--portfolio-font-weight-medium);
+  letter-spacing: var(--portfolio-letter-spacing-meta);
+  line-height: var(--portfolio-line-height-meta);
+}
+
+.availability__content {
+  display: grid;
+  gap: var(--portfolio-space-xs);
+  padding-block: var(--portfolio-space-md);
+  border-block: var(--portfolio-border-width) solid
+    var(--portfolio-color-border);
+}
+
+.availability__statement,
+.availability__location {
+  margin: 0;
+}
+
+.availability__statement {
+  font-size: var(--portfolio-font-size-body);
+  font-weight: var(--portfolio-font-weight-medium);
+  line-height: var(--portfolio-line-height-body);
+}
+
+.availability__location {
+  color: var(--portfolio-color-text-muted);
+  font-size: var(--portfolio-font-size-meta);
+  letter-spacing: var(--portfolio-letter-spacing-meta);
+  line-height: var(--portfolio-line-height-meta);
+}
+
 @media (min-width: 48rem) {
   .home-hero {
     padding-block: var(--portfolio-space-lg);
@@ -215,6 +257,12 @@ body {
   .technical-skills__group {
     grid-template-columns:
       minmax(var(--portfolio-space-2xl), 0.35fr) minmax(0, 1fr);
+    align-items: baseline;
+    gap: var(--portfolio-space-lg);
+  }
+
+  .availability__content {
+    grid-template-columns: minmax(0, 1fr) auto;
     align-items: baseline;
     gap: var(--portfolio-space-lg);
   }

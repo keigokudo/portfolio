@@ -128,6 +128,21 @@ export default function HomePage() {
           </dl>
         </Container>
       </section>
+
+      <section className="availability">
+        <Container>
+          <h2 className="availability__heading">AVAILABILITY</h2>
+
+          <div className="availability__content">
+            <p className="availability__statement">
+              Available for contract and freelance work
+            </p>
+            <p className="availability__location">
+              UK remote · London hybrid
+            </p>
+          </div>
+        </Container>
+      </section>
     </>
   );
 }
