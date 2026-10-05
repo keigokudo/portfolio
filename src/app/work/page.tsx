@@ -1,4 +1,4 @@
-import { PageIntro } from "@krnjs/react-ui";
+import { PageIntro } from "@krnjs/react-ui/portfolio";
 
 export default function WorkPage() {
   return (

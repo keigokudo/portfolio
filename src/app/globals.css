@@ -16,6 +16,72 @@ body {
   padding-block: var(--portfolio-layout-section-gap-compact);
 }
 
+.home-hero__content {
+  max-width: calc(
+    var(--portfolio-layout-content-max) + var(--portfolio-space-2xl) +
+      var(--portfolio-space-2xl)
+  );
+}
+
+.home-hero__heading {
+  max-width: 15ch;
+  margin: 0;
+  overflow-wrap: anywhere;
+  font-family: var(--portfolio-font-heading);
+  font-size: var(--portfolio-font-size-display);
+  font-weight: var(--portfolio-font-weight-bold);
+  letter-spacing: var(--portfolio-letter-spacing-heading);
+  line-height: var(--portfolio-line-height-heading);
+}
+
+.home-hero__details {
+  display: grid;
+  gap: var(--portfolio-space-md);
+  margin-top: var(--portfolio-space-xl);
+  padding-top: var(--portfolio-space-md);
+  border-top: var(--portfolio-border-width) solid
+    var(--portfolio-color-border);
+}
+
+.home-hero__experience,
+.home-hero__technologies {
+  margin: 0;
+}
+
+.home-hero__experience {
+  max-width: 30ch;
+  font-family: var(--portfolio-font-heading);
+  font-size: var(--portfolio-font-size-heading);
+  font-weight: var(--portfolio-font-weight-medium);
+  letter-spacing: var(--portfolio-letter-spacing-heading);
+  line-height: var(--portfolio-line-height-heading);
+}
+
+.home-hero__technologies {
+  max-width: 32rem;
+  color: var(--portfolio-color-text-muted);
+  font-size: var(--portfolio-font-size-body);
+  font-weight: var(--portfolio-font-weight-medium);
+  line-height: var(--portfolio-line-height-body);
+}
+
+@media (min-width: 48rem) {
+  .home-hero {
+    padding-block: var(--portfolio-space-lg);
+  }
+
+  .home-hero__details {
+    grid-template-columns: minmax(0, 1fr) minmax(16rem, auto);
+    align-items: end;
+    gap: var(--portfolio-space-lg);
+  }
+
+  .home-hero__technologies {
+    justify-self: end;
+    text-align: right;
+  }
+}
+
 .work-detail {
   max-width: var(--portfolio-layout-content-max);
 }

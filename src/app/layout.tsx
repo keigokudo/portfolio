@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SiteFooter } from "@krnjs/react-ui";
+import { SiteFooter } from "@krnjs/react-ui/portfolio";
 import "@krnjs/react-ui/styles.css";
 import "./globals.css";
 import SiteNavigation from "./components/SiteNavigation";

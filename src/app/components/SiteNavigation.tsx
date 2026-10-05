@@ -1,6 +1,6 @@
 "use client";
 
-import { SiteHeader } from "@krnjs/react-ui";
+import { SiteHeader } from "@krnjs/react-ui/portfolio";
 import { usePathname } from "next/navigation";
 
 export default function SiteNavigation() {
