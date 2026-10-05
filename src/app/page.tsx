@@ -1,12 +1,11 @@
-import { Button } from "@krnjs/react-ui";
+import { PageIntro } from "@krnjs/react-ui";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div>
-      <main>
-        <Button variant="contained">Contained</Button>
-        <Button variant="outlined">Outlined</Button>
-      </main>
-    </div>
+    <PageIntro
+      eyebrow="Portfolio"
+      heading="Production portfolio"
+      description="Application foundation using the published Portfolio UI package."
+    />
   );
 }
