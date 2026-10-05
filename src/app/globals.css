@@ -120,6 +120,55 @@ body {
   line-height: var(--portfolio-line-height-body);
 }
 
+.technical-skills {
+  padding-top: var(--portfolio-layout-section-gap-compact);
+}
+
+.technical-skills__heading {
+  margin: 0;
+  padding-block: var(--portfolio-space-md);
+  border-top: var(--portfolio-border-width) solid
+    var(--portfolio-color-border);
+  font-family: var(--portfolio-font-body);
+  font-size: var(--portfolio-font-size-meta);
+  font-weight: var(--portfolio-font-weight-medium);
+  letter-spacing: var(--portfolio-letter-spacing-meta);
+  line-height: var(--portfolio-line-height-meta);
+}
+
+.technical-skills__groups {
+  margin: 0;
+  border-top: var(--portfolio-border-width) solid
+    var(--portfolio-color-border);
+}
+
+.technical-skills__group {
+  display: grid;
+  gap: var(--portfolio-space-xs);
+  padding-block: var(--portfolio-space-md);
+  border-bottom: var(--portfolio-border-width) solid
+    var(--portfolio-color-border);
+}
+
+.technical-skills__group dt,
+.technical-skills__group dd {
+  margin: 0;
+}
+
+.technical-skills__group dt {
+  color: var(--portfolio-color-text-muted);
+  font-size: var(--portfolio-font-size-meta);
+  font-weight: var(--portfolio-font-weight-medium);
+  letter-spacing: var(--portfolio-letter-spacing-meta);
+  line-height: var(--portfolio-line-height-meta);
+}
+
+.technical-skills__group dd {
+  color: var(--portfolio-color-text);
+  font-size: var(--portfolio-font-size-body);
+  line-height: var(--portfolio-line-height-body);
+}
+
 @media (min-width: 48rem) {
   .home-hero {
     padding-block: var(--portfolio-space-lg);
@@ -161,6 +210,13 @@ body {
   .delivery-process__stage {
     display: block;
     margin-top: var(--portfolio-space-xs);
+  }
+
+  .technical-skills__group {
+    grid-template-columns:
+      minmax(var(--portfolio-space-2xl), 0.35fr) minmax(0, 1fr);
+    align-items: baseline;
+    gap: var(--portfolio-space-lg);
   }
 }
 

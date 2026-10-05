@@ -99,6 +99,35 @@ export default function HomePage() {
           </ol>
         </Container>
       </section>
+
+      <section className="technical-skills">
+        <Container>
+          <h2 className="technical-skills__heading">TECHNICAL SKILLS</h2>
+
+          <dl className="technical-skills__groups">
+            <div className="technical-skills__group">
+              <dt>Core</dt>
+              <dd>TypeScript · JavaScript · React · Next.js · Node.js</dd>
+            </div>
+            <div className="technical-skills__group">
+              <dt>Frontend</dt>
+              <dd>HTML · CSS · Accessibility · Storybook · Testing</dd>
+            </div>
+            <div className="technical-skills__group">
+              <dt>Backend &amp; Data</dt>
+              <dd>Node.js · REST · GraphQL · SQL</dd>
+            </div>
+            <div className="technical-skills__group">
+              <dt>Cloud &amp; Delivery</dt>
+              <dd>AWS · Azure · Terraform · CI/CD</dd>
+            </div>
+            <div className="technical-skills__group">
+              <dt>Platforms &amp; Integrations</dt>
+              <dd>Contentful · Algolia · Apollo</dd>
+            </div>
+          </dl>
+        </Container>
+      </section>
     </>
   );
 }
