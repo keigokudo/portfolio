@@ -26,9 +26,11 @@ export default function ReactUiPage() {
   return (
     <Container>
       <article className="case-study">
-        <Link className="case-study__back-link" href="/work">
-          ← Back to Work
-        </Link>
+        <nav className="case-study__breadcrumb" aria-label="Breadcrumb">
+          <Link href="/work">Work</Link>
+          <span aria-hidden="true"> / </span>
+          <span aria-current="page">@krnjs/react-ui</span>
+        </nav>
 
         <header className="case-study__header">
           <p className="case-study__eyebrow">REUSABLE UI SYSTEM</p>

@@ -36,7 +36,11 @@ export default function RootLayout({
       <body className="portfolio-foundation">
         <SiteNavigation />
         <main className="site-main">{children}</main>
-        <SiteFooter />
+        <SiteFooter
+          identity="Keigo Kudo · Software Engineer"
+          githubHref="https://github.com/keigokudo"
+          linkedinHref="https://www.linkedin.com/in/keigo-k-9a0a32194/"
+        />
       </body>
     </html>
   );

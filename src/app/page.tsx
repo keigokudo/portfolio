@@ -14,6 +14,7 @@ export default function HomePage() {
       <section className="home-hero" aria-labelledby="home-hero-heading">
         <Container>
           <div className="home-hero__content">
+            <p className="home-hero__identity">Keigo Kudo</p>
             <h1 id="home-hero-heading" className="home-hero__heading">
               Software Engineer
             </h1>
