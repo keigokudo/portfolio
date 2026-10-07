@@ -216,6 +216,146 @@ body {
   padding-top: var(--portfolio-layout-section-gap-compact);
 }
 
+.about-section {
+  padding-top: var(--portfolio-layout-section-gap-compact);
+}
+
+.about-section__layout {
+  display: grid;
+  gap: var(--portfolio-space-lg);
+  padding-top: var(--portfolio-space-md);
+  border-top: var(--portfolio-border-width) solid
+    var(--portfolio-color-border);
+}
+
+.about-section__heading {
+  margin: 0;
+  font-family: var(--portfolio-font-body);
+  font-size: var(--portfolio-font-size-meta);
+  font-weight: var(--portfolio-font-weight-medium);
+  letter-spacing: var(--portfolio-letter-spacing-meta);
+  line-height: var(--portfolio-line-height-meta);
+}
+
+.about-section__prose {
+  max-width: var(--portfolio-layout-content-max);
+}
+
+.about-section__prose p {
+  margin: 0;
+  line-height: var(--portfolio-line-height-body);
+}
+
+.about-section__prose p + p {
+  margin-top: var(--portfolio-space-sm);
+}
+
+.about-experience__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-experience__row {
+  display: grid;
+  min-width: 0;
+  gap: var(--portfolio-space-md);
+  padding-block: var(--portfolio-space-lg);
+  border-bottom: var(--portfolio-border-width) solid
+    var(--portfolio-color-border);
+}
+
+.about-experience__identity {
+  min-width: 0;
+}
+
+.about-experience__identity h3,
+.about-experience__identity p,
+.about-experience__dates,
+.about-experience__focus {
+  margin: 0;
+}
+
+.about-experience__identity h3 {
+  overflow-wrap: anywhere;
+  font-family: var(--portfolio-font-heading);
+  font-size: var(--portfolio-font-size-heading);
+  font-weight: var(--portfolio-font-weight-bold);
+  letter-spacing: var(--portfolio-letter-spacing-heading);
+  line-height: var(--portfolio-line-height-heading);
+}
+
+.about-experience__identity p {
+  margin-top: var(--portfolio-space-xs);
+  font-weight: var(--portfolio-font-weight-medium);
+  line-height: var(--portfolio-line-height-body);
+}
+
+.about-experience__dates {
+  color: var(--portfolio-color-text-muted);
+  font-size: var(--portfolio-font-size-meta);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: var(--portfolio-letter-spacing-meta);
+  line-height: var(--portfolio-line-height-meta);
+}
+
+.about-experience__focus {
+  max-width: var(--portfolio-layout-content-max);
+  color: var(--portfolio-color-text-muted);
+  line-height: var(--portfolio-line-height-body);
+}
+
+.about-depth {
+  max-width: var(--portfolio-layout-content-max);
+  margin: 0;
+  border-top: var(--portfolio-border-width) solid
+    var(--portfolio-color-border);
+}
+
+.about-depth div {
+  padding-block: var(--portfolio-space-md);
+  border-bottom: var(--portfolio-border-width) solid
+    var(--portfolio-color-border);
+}
+
+.about-depth dt,
+.about-depth dd {
+  margin: 0;
+  line-height: var(--portfolio-line-height-body);
+}
+
+.about-depth dt {
+  font-weight: var(--portfolio-font-weight-bold);
+}
+
+.about-depth dd {
+  margin-top: var(--portfolio-space-xs);
+  color: var(--portfolio-color-text-muted);
+}
+
+.about-section__work-link {
+  display: inline-block;
+  margin-top: var(--portfolio-space-md);
+  border-radius: var(--portfolio-radius-subtle);
+  color: var(--portfolio-color-text);
+  font-size: var(--portfolio-font-size-meta);
+  font-weight: var(--portfolio-font-weight-medium);
+  letter-spacing: var(--portfolio-letter-spacing-meta);
+  line-height: var(--portfolio-line-height-meta);
+  text-decoration: none;
+}
+
+.about-section__work-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: var(--portfolio-border-width);
+  text-underline-offset: var(--portfolio-space-xs);
+}
+
+.about-section__work-link:focus-visible {
+  outline: var(--portfolio-focus-width) solid var(--portfolio-color-focus);
+  outline-offset: var(--portfolio-focus-offset);
+}
+
 .work-lab__list {
   margin: 0;
   padding: 0;
@@ -745,6 +885,18 @@ body {
       minmax(0, 1fr) auto;
     grid-template-areas: "index identity focus arrow";
     column-gap: var(--portfolio-space-lg);
+  }
+
+  .about-section__layout {
+    grid-template-columns: minmax(var(--portfolio-space-2xl), 0.45fr)
+      minmax(0, 1fr);
+    gap: var(--portfolio-space-xl);
+  }
+
+  .about-experience__row {
+    grid-template-columns: minmax(0, 1.05fr) minmax(8rem, 0.4fr)
+      minmax(0, 1fr);
+    gap: var(--portfolio-space-xl);
   }
 
   .case-study__header-details {
