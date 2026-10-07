@@ -57,9 +57,9 @@ export default function AboutPage() {
                   <p>FlatPeak Technology Ltd</p>
                 </div>
                 <p className="about-experience__dates">
-                  <time dateTime="2025-11">Nov 2025</time>
+                  <time dateTime="2025">Late 2025</time>
                   <span aria-hidden="true"> – </span>
-                  <time dateTime="2026-01">Jan 2026</time>
+                  <time dateTime="2026">Early 2026</time>
                 </p>
                 <p className="about-experience__focus">
                   TypeScript and Node.js backend services, AWS serverless
@@ -75,9 +75,9 @@ export default function AboutPage() {
                   <p>dotSource SE</p>
                 </div>
                 <p className="about-experience__dates">
-                  <time dateTime="2021-04">Apr 2021</time>
+                  <time dateTime="2021">2021</time>
                   <span aria-hidden="true"> – </span>
-                  <time dateTime="2024-10">Oct 2024</time>
+                  <time dateTime="2024">2024</time>
                 </p>
                 <p className="about-experience__focus">
                   React and Next.js product development, reusable UI systems,
@@ -93,9 +93,7 @@ export default function AboutPage() {
                   <p>EMSI</p>
                 </div>
                 <p className="about-experience__dates">
-                  <time dateTime="2020-02">Feb 2020</time>
-                  <span aria-hidden="true"> – </span>
-                  <time dateTime="2020-09">Sep 2020</time>
+                  <time dateTime="2020">2020</time>
                 </p>
                 <p className="about-experience__focus">
                   React frontend development, accessibility, Node.js and Python
@@ -110,9 +108,9 @@ export default function AboutPage() {
                   <p>TechnoPro</p>
                 </div>
                 <p className="about-experience__dates">
-                  <time dateTime="2017-01">Jan 2017</time>
+                  <time dateTime="2017">2017</time>
                   <span aria-hidden="true"> – </span>
-                  <time dateTime="2019-06">Jun 2019</time>
+                  <time dateTime="2019">2019</time>
                 </p>
                 <p className="about-experience__focus">
                   Java and Spring Boot systems, Oracle SQL, frontend

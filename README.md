@@ -17,7 +17,11 @@ Use `npm run lint` to lint the application and `npm run build` to create a produ
 
 - `/` — Home placeholder
 - `/work` — Work placeholder
-- `/work/[slug]` — Work detail placeholder
+- `/work/phrase-recall` — PhraseRecall
+- `/work/react-ui` — @krnjs/react-ui
+- `/work/ottobock-expert-search` — Ottobock Expert Search
+- `/work/local-transcriber` — Local Transcriber
+- `/work/url-transcriber` — URL Transcriber
 - `/about` — About placeholder
 
 ## Architecture status
