@@ -3,6 +3,9 @@ import { Container } from "@krnjs/react-ui";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/work/ottobock-expert-search",
+  },
   title: "Ottobock Expert Search",
   description:
     "A commercial production search case study covering Algolia, location-aware discovery, geocoding, content context, and integration engineering.",

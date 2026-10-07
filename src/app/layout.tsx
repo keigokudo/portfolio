@@ -5,6 +5,7 @@ import "./globals.css";
 import SiteNavigation from "./components/SiteNavigation";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://keigokudo.vercel.app"),
   title: {
     default: "Software Engineer Portfolio",
     template: "%s | Software Engineer Portfolio",

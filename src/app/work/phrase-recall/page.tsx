@@ -3,6 +3,9 @@ import { Container } from "@krnjs/react-ui";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/work/phrase-recall",
+  },
   title: "PhraseRecall",
   description:
     "A local-first active-recall product connecting AI-generated language material with fast, measurable practice and structured session results.",

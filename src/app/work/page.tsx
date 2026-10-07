@@ -8,6 +8,9 @@ import {
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/work",
+  },
   title: "Work",
   description:
     "Selected product engineering, reusable UI systems, commercial integrations, and practical engineering tools.",

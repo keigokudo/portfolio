@@ -4,6 +4,9 @@ import { PageIntro, SectionHeader } from "@krnjs/react-ui/portfolio";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/about",
+  },
   title: "About",
   description:
     "Professional background, production experience, technical depth, and an engineering approach focused on clear systems and reliable delivery.",

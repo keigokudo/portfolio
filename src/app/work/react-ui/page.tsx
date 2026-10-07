@@ -3,6 +3,9 @@ import { Container } from "@krnjs/react-ui";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/work/react-ui",
+  },
   title: "@krnjs/react-ui",
   description:
     "A reusable React UI package with TypeScript APIs, Storybook, accessibility validation, npm distribution, and a real Next.js downstream consumer.",
