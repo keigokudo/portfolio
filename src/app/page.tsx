@@ -140,6 +140,14 @@ export default function HomePage() {
             <p className="availability__location">
               UK remote · London hybrid
             </p>
+            <a
+              className="availability__link"
+              href="https://www.linkedin.com/in/keigo-k-9a0a32194/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Contact on LinkedIn ↗
+            </a>
           </div>
         </Container>
       </section>

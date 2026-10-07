@@ -211,6 +211,22 @@ body {
   line-height: var(--portfolio-line-height-meta);
 }
 
+.availability__link {
+  width: fit-content;
+  border-radius: var(--portfolio-radius-subtle);
+  color: var(--portfolio-color-text);
+  font-size: var(--portfolio-font-size-meta);
+  font-weight: var(--portfolio-font-weight-medium);
+  line-height: var(--portfolio-line-height-meta);
+  text-decoration-thickness: var(--portfolio-border-width);
+  text-underline-offset: var(--portfolio-space-xs);
+}
+
+.availability__link:focus-visible {
+  outline: var(--portfolio-focus-width) solid var(--portfolio-color-focus);
+  outline-offset: var(--portfolio-focus-offset);
+}
+
 .work-case-studies,
 .work-lab {
   padding-top: var(--portfolio-layout-section-gap-compact);
@@ -874,7 +890,7 @@ body {
   }
 
   .availability__content {
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr) auto auto;
     align-items: baseline;
     gap: var(--portfolio-space-lg);
   }
