@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import { Container } from "@krnjs/react-ui";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "@krnjs/react-ui",
+  description:
+    "A reusable React UI package with TypeScript APIs, Storybook, accessibility validation, npm distribution, and a real Next.js downstream consumer.",
+};
 
 const deliveryWorkflow = [
   "Product requirements",

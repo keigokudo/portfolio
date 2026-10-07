@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import { Container } from "@krnjs/react-ui";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "PhraseRecall",
+  description:
+    "A local-first active-recall product connecting AI-generated language material with fast, measurable practice and structured session results.",
+};
 
 const workflow = [
   "Notion learning data",

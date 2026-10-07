@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import { Container } from "@krnjs/react-ui";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Ottobock Expert Search",
+  description:
+    "A commercial production search case study covering Algolia, location-aware discovery, geocoding, content context, and integration engineering.",
+};
 
 const systemFlow = [
   "User search / location input",

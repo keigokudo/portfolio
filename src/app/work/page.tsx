@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Container } from "@krnjs/react-ui";
 import {
   PageIntro,
@@ -5,6 +6,12 @@ import {
   SectionHeader,
 } from "@krnjs/react-ui/portfolio";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Work",
+  description:
+    "Selected product engineering, reusable UI systems, commercial integrations, and practical engineering tools.",
+};
 
 export default function WorkPage() {
   return (

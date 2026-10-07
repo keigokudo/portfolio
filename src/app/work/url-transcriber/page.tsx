@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import { Container } from "@krnjs/react-ui";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "URL Transcriber",
+  description:
+    "A local transcription CLI using subtitle-first processing with yt-dlp and a faster-whisper fallback for public video URLs.",
+};
 
 export default function UrlTranscriberPage() {
   return (

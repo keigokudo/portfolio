@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import { Container } from "@krnjs/react-ui";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Local Transcriber",
+  description:
+    "A local Windows transcription CLI using WASAPI Loopback and faster-whisper to turn system audio into timestamped text.",
+};
 
 const workflow = [
   "Windows playback",

@@ -5,8 +5,24 @@ import "./globals.css";
 import SiteNavigation from "./components/SiteNavigation";
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Software engineering portfolio",
+  title: {
+    default: "Software Engineer Portfolio",
+    template: "%s | Software Engineer Portfolio",
+  },
+  description:
+    "Software engineering portfolio focused on React, TypeScript, Next.js, Node.js, production systems, integrations, and reliable delivery.",
+  openGraph: {
+    title: "Software Engineer Portfolio",
+    description:
+      "Software engineering portfolio focused on React, TypeScript, Next.js, Node.js, production systems, integrations, and reliable delivery.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Software Engineer Portfolio",
+    description:
+      "Software engineering portfolio focused on React, TypeScript, Next.js, Node.js, production systems, integrations, and reliable delivery.",
+  },
 };
 
 export default function RootLayout({
